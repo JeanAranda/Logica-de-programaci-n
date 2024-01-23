@@ -2,14 +2,15 @@
 /**
  esta es otra forma de usar un comentario
  */
-let numeroSecreto = 6;
+let numeroSecreto = Math.floor(Math.random()*10)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabaraVeces = 'vez';
-let maximosIntentos = 3;
+let maximosIntentos = 4;
+console.log(numeroSecreto);
 while (numeroUsuario !=  numeroSecreto) {
-    numeroUsuario = prompt('Me indicas el número porfavor:');
-    console.log(numeroUsuario);
+    numeroUsuario = parseInt(prompt('Me indicas el número porfavor:'));
+    console.log(typeof(numeroUsuario));
     
     if (numeroUsuario == numeroSecreto){
         //Acertamos
